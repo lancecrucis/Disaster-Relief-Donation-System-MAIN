@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign Up Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign Up Page.Designer.cs">
+      <DependentUpon>Sign Up Page.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forgot Password.resx">
       <DependentUpon>Forgot Password.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sign Up Page.resx">
+      <DependentUpon>Sign Up Page.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
