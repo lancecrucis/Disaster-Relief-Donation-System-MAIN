@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Disaster_Relief_Donation_System_Functions
 {
-    public partial class Form1 : Form
+    public partial class loginPage : Form
     {
-        public Form1()
+        public loginPage()
         {
             InitializeComponent();
+        }
+
+        private void forgotPassword_Click(object sender, EventArgs e)
+        {
+            Forgot_Password forgotPasswordPage = new Forgot_Password();
+            forgotPasswordPage.Show();
+            this.Close();
         }
     }
 }

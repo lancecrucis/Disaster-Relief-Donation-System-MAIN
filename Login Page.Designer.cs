@@ -1,6 +1,6 @@
 ﻿namespace Disaster_Relief_Donation_System_Functions
 {
-    partial class Form1
+    partial class loginPage
     {
         /// <summary>
         /// Required designer variable.
@@ -95,6 +95,7 @@
             this.forgotPassword.Size = new System.Drawing.Size(92, 13);
             this.forgotPassword.TabIndex = 5;
             this.forgotPassword.Text = "Forgot Password?";
+            this.forgotPassword.Click += new System.EventHandler(this.forgotPassword_Click);
             // 
             // label4
             // 
@@ -117,7 +118,7 @@
             this.register.TabIndex = 7;
             this.register.Text = "Register";
             // 
-            // Form1
+            // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,8 +131,8 @@
             this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "loginPage";
+            this.Text = "Login Page";
             this.ResumeLayout(false);
             this.PerformLayout();
 

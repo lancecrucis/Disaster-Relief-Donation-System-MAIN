@@ -16,5 +16,17 @@ namespace Disaster_Relief_Donation_System_Functions
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backToLogin_Click(object sender, EventArgs e)
+        {
+            loginPage loginPage = new loginPage();
+            loginPage.Show();
+            this.Close();
+        }
     }
 }
