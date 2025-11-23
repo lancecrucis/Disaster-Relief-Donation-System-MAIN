@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace Disaster_Relief_Donation_System_Functions
 {
-    public partial class Sign_Up_Page : Form
+    public partial class verifyCode : Form
     {
-        public Sign_Up_Page()
+        public verifyCode(string email)
         {
             InitializeComponent();
+            userAccount.Text = email;
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void userAccount_Click(object sender, EventArgs e)
         {
-            loginPage loginPage = new loginPage();
-            loginPage.Show();
-            this.Close();
-            
+
         }
     }
 }

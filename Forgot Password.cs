@@ -28,5 +28,16 @@ namespace Disaster_Relief_Donation_System_Functions
             loginPage.Show();
             this.Close();
         }
+
+        private void sendCodeBtn_Click(object sender, EventArgs e)
+        {
+            string email = emailAddresstxt.Text;
+
+            verifyCode verifyCodePage = new verifyCode(email);
+            verifyCodePage.Show();
+            this.Close();
+
+            
+        }
     }
 }

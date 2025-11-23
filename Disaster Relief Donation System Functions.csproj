@@ -66,6 +66,12 @@
     <Compile Include="Sign Up Page.Designer.cs">
       <DependentUpon>Sign Up Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="verifyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verifyCode.Designer.cs">
+      <DependentUpon>verifyCode.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forgot Password.resx">
       <DependentUpon>Forgot Password.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="Sign Up Page.resx">
       <DependentUpon>Sign Up Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verifyCode.resx">
+      <DependentUpon>verifyCode.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

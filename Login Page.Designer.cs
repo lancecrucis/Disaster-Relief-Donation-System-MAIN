@@ -30,8 +30,8 @@
         {
             this.username = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.Label();
-            this.usernametxt = new System.Windows.Forms.TextBox();
             this.passwordtxt = new System.Windows.Forms.TextBox();
+            this.usernametxt = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.forgotPassword = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,24 +56,25 @@
             this.password.TabIndex = 1;
             this.password.Text = "Password";
             // 
-            // usernametxt
-            // 
-            this.usernametxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.usernametxt.Location = new System.Drawing.Point(56, 252);
-            this.usernametxt.Multiline = true;
-            this.usernametxt.Name = "usernametxt";
-            this.usernametxt.Size = new System.Drawing.Size(480, 37);
-            this.usernametxt.TabIndex = 2;
-            // 
             // passwordtxt
             // 
             this.passwordtxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.passwordtxt.Location = new System.Drawing.Point(56, 157);
+            this.passwordtxt.Location = new System.Drawing.Point(56, 252);
             this.passwordtxt.Multiline = true;
             this.passwordtxt.Name = "passwordtxt";
             this.passwordtxt.PasswordChar = '*';
             this.passwordtxt.Size = new System.Drawing.Size(480, 37);
-            this.passwordtxt.TabIndex = 3;
+            this.passwordtxt.TabIndex = 2;
+            // 
+            // usernametxt
+            // 
+            this.usernametxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.usernametxt.Location = new System.Drawing.Point(56, 157);
+            this.usernametxt.Multiline = true;
+            this.usernametxt.Name = "usernametxt";
+            this.usernametxt.Size = new System.Drawing.Size(480, 37);
+            this.usernametxt.TabIndex = 3;
+            this.usernametxt.TextChanged += new System.EventHandler(this.passwordtxt_TextChanged);
             // 
             // loginButton
             // 
@@ -84,6 +85,7 @@
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // forgotPassword
             // 
@@ -117,6 +119,7 @@
             this.register.Size = new System.Drawing.Size(46, 13);
             this.register.TabIndex = 7;
             this.register.Text = "Register";
+            this.register.Click += new System.EventHandler(this.register_Click);
             // 
             // loginPage
             // 
@@ -127,8 +130,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.forgotPassword);
             this.Controls.Add(this.loginButton);
-            this.Controls.Add(this.passwordtxt);
             this.Controls.Add(this.usernametxt);
+            this.Controls.Add(this.passwordtxt);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.Name = "loginPage";
@@ -142,8 +145,8 @@
 
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label password;
-        private System.Windows.Forms.TextBox usernametxt;
         private System.Windows.Forms.TextBox passwordtxt;
+        private System.Windows.Forms.TextBox usernametxt;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label forgotPassword;
         private System.Windows.Forms.Label label4;
