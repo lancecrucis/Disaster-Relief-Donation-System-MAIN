@@ -39,12 +39,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,7 +139,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 44);
             this.button3.TabIndex = 2;
-            this.button3.Text = "   DONATION";
+            this.button3.Text = "   DONATIONS";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
@@ -203,25 +202,15 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightCyan;
-            this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(231, 53);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1119, 694);
             this.panel4.TabIndex = 3;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(290, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "this is the dashboard";
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.button8);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(231, 1);
             this.panel5.Name = "panel5";
@@ -236,6 +225,16 @@
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hello, User!";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(806, 10);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(82, 30);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Donate Now";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Homepage
             // 
@@ -253,8 +252,6 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -275,6 +272,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button8;
     }
 }

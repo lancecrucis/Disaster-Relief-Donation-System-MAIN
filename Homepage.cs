@@ -45,5 +45,11 @@ namespace Disaster_Relief_Donation_System_Functions
         {
             SwitchControl(new Donations());
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            donateButton donate = new donateButton();
+            donate.Show();
+        }
     }
 }
