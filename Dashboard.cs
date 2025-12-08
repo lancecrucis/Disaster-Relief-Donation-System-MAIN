@@ -16,5 +16,10 @@ namespace Disaster_Relief_Donation_System_Functions
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }

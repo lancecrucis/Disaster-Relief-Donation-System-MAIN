@@ -16,5 +16,19 @@ namespace Disaster_Relief_Donation_System_Functions
         {
             InitializeComponent();
         }
+        int cardCount = 0;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (requestButtonInfo popUpForm = new requestButtonInfo(this as Request))
+            {
+                popUpForm.ShowDialog();
+            }
+        }
+        public void AddCardToPanel(Panel card)
+        {
+            card.Location = new Point(10, cardCount * 140 + 10);
+            panel1.Controls.Add(card);
+            cardCount++;
+        }
     }
 }

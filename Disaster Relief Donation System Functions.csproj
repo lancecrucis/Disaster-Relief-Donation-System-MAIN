@@ -89,6 +89,12 @@
     <Compile Include="Request.Designer.cs">
       <DependentUpon>Request.cs</DependentUpon>
     </Compile>
+    <Compile Include="requestButtonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="requestButtonInfo.Designer.cs">
+      <DependentUpon>requestButtonInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sign Up Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Request.resx">
       <DependentUpon>Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="requestButtonInfo.resx">
+      <DependentUpon>requestButtonInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sign Up Page.resx">
       <DependentUpon>Sign Up Page.cs</DependentUpon>
